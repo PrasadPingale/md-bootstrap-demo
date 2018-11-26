@@ -1,0 +1,48 @@
+.order-section {
+  display: -webkit-inline-box;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #f8f8f8;
+}
+.payments-section {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-sales {
+  font-size: 18px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.border-right {
+  border-right: 1px soild grey;
+}
+.padding-right-30 {
+  padding-right: 30px;
+}
+.button.calendar,
+button.calendar {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAcCAYAAAAEN20fAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEUSURBVEiJ7ZQxToVAEIY/YCHGxN6XGOIpnpaEsBSeQC9ArZbm9TZ6ADyBNzAhQGGl8Riv4BLAWAgmkpBYkH1b8FWT2WK/zJ8ZJ4qiI6XUI3ANnGKWBnht2/ZBDRK3hgVGNsCd7/ui+JkEIrKtqurLpEWaphd933+IyI3LEIdpCYCiKD6HcuOa/nwOa0ScJEnk0BJg0UTUWJRl6RxCYEzEmomsIlPU3IPW+grIAbquy+q6fluy/28RIBeRMwDXdXMgXLj/B2uimRXpui4D9sBeRLKl+1N+L+t6RwbWrZliTTTr1oxYtzVWiTQAcRxvTX+eJMnlUDaO1vpZRO5NS0x48sIwfPc87xg4B04MCzQi8hIEwe4bl1DnFMCN2zsAAAAASUVORK5CYII=) !important;
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: center;
+  width: 2.75rem;
+}
+.form-control {
+  width: 50%;
+}
+.date-box {
+  display: -webkit-inline-box;
+}
+.date-btn {
+  padding: 1rem 0;
+  margin: 0;
+  width: 2rem !important;
+}
+.toggle-color {
+  color: #ff8c00;
+}

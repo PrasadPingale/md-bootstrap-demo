@@ -1,0 +1,82 @@
+<div>
+  <div class="col-md-12 order-section">
+    <div class="col-md-3 mr-10">
+      <span class="text-sales text-bold"> Sales Order# 87900 </span>
+      <span class="pull-right text-bold"> New </span>
+      <div>Order No.: <span class="text-bold">989564</span></div>
+    </div>
+    <div class="col-md-3 mr-10">
+      <div>Buyer: <span class="text-bold">Retail Company Co.</span></div>
+      <div>Routing: <span class="text-bold">Delivered</span></div>
+    </div>
+    <div class="col-md-3 mr-10">
+      <div>Ship From: <span class="text-bold">Salinaas WH</span></div>
+      <div class="date-box">
+        <input
+          class="form-control"
+          placeholder="yyyy-mm-dd"
+          name="dp"
+          [(ngModel)]="model"
+          ngbDatepicker
+          #d="ngbDatepicker"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn calendar date-btn"
+            (click)="d.toggle()"
+            type="button"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 padding-right-30">
+      <div>
+        Deliverd to: <span class="text-bold">Norther Cal Location</span>
+      </div>
+      <div class="date-box">
+        <input
+          class="form-control"
+          placeholder="yyyy-mm-dd"
+          name="dp"
+          [(ngModel)]="model1"
+          ngbDatepicker
+          #d1="ngbDatepicker"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn calendar date-btn"
+            (click)="d1.toggle()"
+            type="button"
+          ></button>
+        </div>
+      </div>
+      <div class="pull-right toggle-color">
+        <a (click)="showPayments = !showPayments">
+          Show Less
+          <i
+            class="fa"
+            [ngClass]="showPayments ? 'fa-angle-up' : 'fa-angle-down'"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 order-section payments-section" *ngIf="showPayments">
+    <div class="col-md-3 mr-10 border-right">
+      <div><i class="fa fa-usd" aria-hidden="true"></i> Payments</div>
+      <div>Invoice: <span class="text-bold">I87900 Sent</span></div>
+      <div>Terms: <span class="text-bold">Net 10 from Delivery</span></div>
+    </div>
+    <div class="col-md-3 mr-10 border-right">
+      <div><i class="fa fa-truck" aria-hidden="true"></i> Transportation</div>
+      <div>Load: <span class="text-bold">LD8888 Approved</span></div>
+      <div>Carriers: <span class="text-bold">ALS Carriers</span></div>
+    </div>
+    <div class="col-md-6">
+      <div><i class="fa fa-clipboard" aria-hidden="true"></i> Other</div>
+      <div>Customer Order: <span class="text-bold">8754999</span></div>
+      <div>Date Code: <span class="text-bold">Dc55</span></div>
+    </div>
+  </div>
+</div>

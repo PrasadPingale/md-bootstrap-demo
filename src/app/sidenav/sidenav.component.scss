@@ -1,0 +1,83 @@
+body {
+  font-size: 14pt;
+}
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+/*
+     * Sidebar
+     */
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px; /* Height of navbar */
+  height: calc(100vh - 80px);
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 400;
+  color: #fff;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #fff;
+}
+
+.sidebar .nav-link.active {
+  background-color: rgba(118, 193, 86, 0.25);
+  border-left: 5px solid #ff9933;
+  .menu-icon {
+    margin-left: -6px;
+  }
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+// .help-menu {
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   width: 160px;
+//   line-height: 34px;
+//   color: #fff;
+//   a {
+//     background: rgba(255, 255, 255, 0.5);
+//     border-radius: 0;
+//     height: 34px;
+//     font-size: 10pt;
+//   }
+//   .support {
+//     width: 115px;
+//   }
+//   .collapse-toggle-btn {
+//     width: 44px;
+//     i {
+//       font-size: 16pt;
+//     }
+//   }
+// }
+.nav-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 16px;
+  padding-top: 8px;
+  height: 40px;
+  padding-left: 10px;
+}
+.menu-icon {
+  width: 20px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 5px;
+}
+.fa {
+  font-size: 20px;
+}

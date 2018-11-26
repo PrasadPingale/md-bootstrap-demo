@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+.side-bar-collapsed {
+  .menu-title {
+    display: none;
+  }
+  .help-menu {
+    width: 56px !important;
+    a {
+      width: 100% !important;
+      text-align: center !important;
+      margin-top: 1px;
+    }
+  }
+  .nav-item {
+    padding-left: 0px !important;
+  }
+}
+
+$skins: () !default;
+$skins: map-merge(
+  (
+    'test': (
+      'skin-primary-color': #fff,
+      'skin-navbar': #fff,
+      'skin-footer-color': #fff,
+      'skin-accent': #fff,
+      'skin-flat': #fff,
+      'skin-sidenav-item': #fff,
+      'skin-sidenav-item-hover': #fff,
+      'skin-gradient-start': #fff,
+      'skin-gradient-end': #fff,
+      'skin-mask-slight': #fff,
+      'skin-mask-light': #fff,
+      'skin-mask-strong': #fff,
+      'skin-sn-child': #fff,
+      'skin-btn-primary': #fff,
+      'skin-btn-secondary': #fff,
+      'skin-btn-default': #fff,
+      'skin-text': #fff,
+    ),
+  ),
+  $skins
+);
+
+// @import './node_modules/angular-bootstrap-md/scss/bootstrap/_variables';
+// @import './node_modules/angular-bootstrap-md/scss/bootstrap/_variables';
+// @import './node_modules/angular-bootstrap-md/scss/bootstrap/_mixins';

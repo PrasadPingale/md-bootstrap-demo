@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <!-- Sidebar -->
+  <nav
+    id="sidebar"
+    class="set-nav"
+    [ngClass]="isCollapsed ? 'active side-bar-collapsed' : ''"
+  >
+    <app-sidenav (collapse)="onCollapse($event)"></app-sidenav>
+  </nav>
+  <!-- Page Content -->
+  <div class="content">
+    <div class="set-nav">
+      <div><app-order-section></app-order-section></div>
+      <div><app-table></app-table></div>
+    </div>
+  </div>
+</div>

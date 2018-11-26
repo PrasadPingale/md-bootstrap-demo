@@ -1,0 +1,30 @@
+.logo {
+  height: 42px;
+  width: 42px;
+  background-color: rgb(11, 38, 190);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.media {
+  display: flex;
+}
+
+.media-body {
+  margin: auto;
+}
+.avtar-img {
+  width: 25px;
+}
+
+#navbarDropdownMenuLink-4 {
+  display: table-footer-group;
+}
+
+.mt-20 {
+  margin-top: 15px;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 2rem;
+}

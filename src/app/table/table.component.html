@@ -1,0 +1,101 @@
+<app-tab-section></app-tab-section>
+
+<div class="card card-cascade narrower">
+  <div class="px-4">
+    <div class="table-wrapper">
+      <!-- Table -->
+      <table class="table table-hover mb-0" mdTable respnsive="true">
+        <!-- Table head -->
+        <thead>
+          <tr>
+            <th></th>
+            <th class="th-lg">Sr#</th>
+            <th class="th-lg">
+              <a (click)="sortBy('sku')"
+                >SKU/Description <mdb-icon icon="sort" class="ml-1"></mdb-icon>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a (click)="sortBy('quantity')"
+                >Quantity
+                <mdb-icon icon="sort" class="ml-1"></mdb-icon>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a (click)="sortBy('price')"
+                >Price <mdb-icon icon="sort" class="ml-1"></mdb-icon>
+              </a>
+            </th>
+            <th class="th-lg"><a>TotalCost </a></th>
+            <th class="th-lg"><a>Action </a></th>
+          </tr>
+        </thead>
+        <!-- Table head -->
+        <tbody>
+          <tr
+            *ngFor="let el of elements; let i = index"
+            [ngClass]="{ 'grey lighten-1': el.selected }"
+          >
+            <th
+              *ngIf="i + 1 >= firstItemIndex && i < lastItemIndex"
+              scope="row"
+            >
+              <mdb-checkbox
+                [default]="true"
+                [(ngModel)]="el.selected"
+              ></mdb-checkbox>
+            </th>
+            <th
+              *ngIf="i + 1 >= firstItemIndex && i < lastItemIndex"
+              scope="row"
+            >
+              {{ el.id }}
+            </th>
+            <td *ngIf="i + 1 >= firstItemIndex && i < lastItemIndex">
+              {{ el.sku }}
+            </td>
+            <td *ngIf="i + 1 >= firstItemIndex && i < lastItemIndex">
+              {{ el.quantity }}
+            </td>
+            <td *ngIf="i + 1 >= firstItemIndex && i < lastItemIndex">
+              ${{ el.price }}
+            </td>
+            <td *ngIf="i + 1 >= firstItemIndex && i < lastItemIndex">
+              ${{ el.quantity * el.price }}
+            </td>
+            <td
+              *ngIf="i + 1 >= firstItemIndex && i < lastItemIndex"
+              class="action-row"
+            >
+              <span
+                ><i
+                  class="fa fa-comments-o"
+                  area-hidden="true"
+                  [mdbPopover]="content"
+                  [mdbPopoverHeader]="title"
+                  mdbWavesEffect
+                  triggers="mouseenter:mouseleave"
+                ></i>
+              </span>
+              <span> <i class="fa fa-trash" area-hidden="true"></i></span>
+            </td>
+          </tr>
+        </tbody>
+        <!-- Table body -->
+
+        <tfoot class="grey lighten-5 w-100">
+          <tr>
+            <td colspan="8">
+              <mdb-table-pagination
+                (nextPageClick)="onNextPageClick($event)"
+                (previousPageClick)="onPreviousPageClick($event)"
+              >
+              </mdb-table-pagination>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <!-- Table -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.white-bg {
+  background-color: #ffffff;
+}
+.nav-link {
+  color: #ff8c00 !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+.link-order {
+  list-style-type: none;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  color: #ff8c00;
+  display: -webkit-inline-box;
+  font-size: 14px;
+  font-weight: 400;
+  li {
+    margin-right: 10px;
+  }
+}
+.nav-link.active {
+  color: #495057 !important;
+}

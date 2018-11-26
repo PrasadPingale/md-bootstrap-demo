@@ -1,0 +1,28 @@
+$orange: #ff8c00;
+
+::ng-deep tfoot p {
+  color: $orange !important;
+  font-weight: 400;
+}
+tfoot td {
+  background-color: #fff !important;
+}
+::ng-deep
+  .custom-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  background-color: $orange !important;
+}
+
+::ng-deep .custom-control {
+  top: -15px;
+}
+.row-selcted {
+  background-color: rgba(0, 0, 0, 0.075) !important;
+}
+.action-row span:first-child {
+  margin-right: 10px;
+}
+.action-row {
+  color: $orange;
+}
